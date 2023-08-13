@@ -1,54 +1,56 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
-.header {
-    background-color: azure;
-    height: 80px;
+body{
+    font-family: 'Merriweather', serif;
+    background-color: #f9fafc;
 }
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: #fff;
 }
-.navbar_button {
-    padding: 12px;
-    width: 150px;
-    height: 50px;
-    color: azure;
-    background-image: linear-gradient(
-        to right,
-        #F86F03 0%,
-        #DB005B 50%
-    );
-    border: none;
-    border-radius: 6px;
-    font-size: 20px;
-}
-.navbar_button:hover{
-    background-image: linear-gradient(
-        to left,
-        #F86F03 0%,
-        #DB005B 50%
-    );
-    cursor: pointer;
-}
-body {
-    background-color: #ACBCFF;
-    font-family: 'Merriweather', serif;
-}
-.navbar_heading {
-    width: 200 px;
-    padding-bottom: 80px;
+.navbar_brand {
+    width: 100px;
 }
 .navbar_logo {
-    width: 95px;
-    height: 70px;
-    padding-left: 50px;
+    width: 100%;
 }
-.navbar_item {
-    width: 100px;
-    height: 75px;
-    padding-right: 110px;
-    padding-bottom: 50px;
+.nav_item {
+    background-image: linear-gradient(
+        to right,
+        #F94C10 0%,
+        #F11A7B 50%
+    );
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.nav_item:hover{
+    background-image: linear-gradient(
+        to left,
+        #F94C10 0%,
+        #F11A7B 50%
+    );
+    border: 2px solid;
+    cursor: pointer;
+}
+@media (min-width:768px) {
+    .navbar{
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+}
+@media (min-width: 1024px) {
+    .navbar_brand {
+        width: 100px;
+    }
+    .nav_item {
+        padding: 20px;
+        font-size: 20px;
+    }
 }
