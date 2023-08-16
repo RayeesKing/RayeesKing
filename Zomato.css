@@ -41,6 +41,8 @@ body{
 }
 .container{
     padding: 15px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .hero_image_container {
@@ -48,12 +50,33 @@ body{
 }
 .hero_image {
     width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 25px 50px -12px grey;
 }
 .hero_text {
     font-weight: 900px;
     font-size: 30px;
     margin: 20px 0;
     color: #1d3557;
+}
+.food_card {
+    background-color: white;
+}
+.explore_menu_text {
+    margin:20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600px;
+}
+.food_card_description {
+    padding: 15px;
+}
+.food_card_image_container {
+    width: 100%;
+}
+.food_image {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
 }
 @media (min-width:768px) {
     .navbar{
@@ -65,13 +88,66 @@ body{
         flex-direction: row-reverse;
         align-items: center;
     }
+    .explore_menu_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        margin-top: 60px;
+    }
+    #pizza_card {
+        margin-bottom: 30px;
+        margin-top: -20px;
+    }
+    .explore_menu_text{
+        font-size: 30px;
+    }
 }
 @media (min-width: 1024px) {
+    .container {
+        max-width: 70%;
+    }
     .navbar_brand {
         width: 100px;
     }
     .button_primary {
         padding: 20px;
         font-size: 20px;
+    }
+    .hero_description {
+        width: 100%;
+    }
+    .hero_text {
+        font-size: 50px;
+    }
+    .explore_menu_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+        margin-top: 60px;
+        padding: 0 30px 100px 30px;
+    }
+    .explore_menu_text{
+        font-size: 50px;
+    }
+    .explore_menu_container {
+        position: relative;
+        margin-top: 100px;
+    }
+    .explore_menu_gradient_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+            to right,
+            #F94C10 0%,
+            #F11A7B 20%,
+            #F94C10 80%
+        );
+        z-index: -3;
+        transform: skewY(-6deg);
     }
 }
