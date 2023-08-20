@@ -46,7 +46,6 @@ body{
     max-width: 100%;
     margin: 0 auto;
 }
-
 .hero_image_container {
     width: 100%;
 }
@@ -147,10 +146,24 @@ body{
     border-radius: 4px;
     font-weight: 50px;
 }
-.bg_image {
-    width: 1150px;
+.bg_image_div{
+    position: relative;
+}
+.bg_image img{
     height: 300px;
-    padding-top: 80px;
+    width:100% ;
+    filter: blur(1px);
+    border-radius: 8px;
+}
+.bg_image_text h1{
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    font-size: 30px;
+    justify-content: center;
 }
 @media (min-width:768px) {
     .navbar{
