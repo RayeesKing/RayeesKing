@@ -165,6 +165,25 @@ body{
     font-size: 30px;
     justify-content: center;
 }
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(
+        to right,
+        #F94C10 0%,
+        #F11A7B 30%,
+        #F94C10 80%
+    );
+    border-radius: 18px 18px 0px 0px;
+}
+.footer_logo {
+    color: white;
+    font-size: 40px;
+}
+.footer_list_div {
+    color: white;
+}
 @media (min-width:768px) {
     .navbar{
         justify-content: space-between;
@@ -221,7 +240,7 @@ body{
         width: 100px;
     }
     .button_primary {
-        padding: 20px;
+        padding: 20px 20px 35px 20px;
         font-size: 20px;
     }
     .hero_description {
