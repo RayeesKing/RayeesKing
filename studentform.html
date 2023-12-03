@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="studentform.js"></script>
+    <style>
+        .title {
+            text-align: center;
+        }
+        table,th,td {
+            border: 1px solid black;
+        }
+        .save-button {
+            width: 440px;
+            height: 40px;
+            border-radius: 6px;
+            background-color: aqua;
+        }
+        .table1 {
+            height: 300px;
+            width: 450px;
+            margin: 5% 35%;
+        }
+        .table2 {
+            height: 60px;
+            width: 750px;
+            margin-left: 25%;
+            margin-bottom: 50%;
+        }
+    </style>
+</head>
+<body>
+    
+<h1 class="title">STUDENT FORM</h1>
+<table class="table1">
+    <tr>
+        <th>Name</th>
+        <th>
+            <input style="width: 90%"  id="input-name">
+        </th>
+    </tr>
+    <tr>
+        <th>Age</th>
+        <th><input style="width: 90%" id="input-age"></th>
+    </tr>
+    <tr>
+        <th>Gender</th>
+        <th>
+            <input  type="radio" name="gender" id="input-male"> Male 
+            <input type="radio" name="gender" id="input-female">Female 
+        </th>
+    </tr>
+    <tr>
+        <th>Course</th>
+        <th>
+            <select name="course" id="input-course" style="width: 90%">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Javascript">Java Script</option>
+            </select>
+        </th>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <th><input style="width: 90%" id="input-email"></th>
+    </tr>
+    <tr>
+        <th colspan="2"><button class="save-button" onclick="save()">Save</button></th>
+    </tr>
+</table>
+
+<table class="table2">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Course</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>Action</th>
+    </tr>
+    
+    <tr id="display1">
+        <th>Rayees</th>
+        <th>18</th>
+        <th>Javascript</th>
+        <th>Male</th>
+        <th>rayeesking1234@gmail.com</th>
+        <th><button onclick="deletefunc()">Delete</button></th>
+    </tr>
+</table>
+
+</body>
+</html>
